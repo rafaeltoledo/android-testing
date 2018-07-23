@@ -14,10 +14,10 @@ android {
     }
 
     sourceSets {
-        final sharedTestDir = 'src/sharedTest/java'
+        final testDir = 'src/test/java'
 
-        test.java.srcDirs = [sharedTestDir]
-        androidTest.java.srcDirs = [sharedTestDir]
+        test.java.srcDirs = [testDir]
+        androidTest.java.srcDirs = [testDir]
     }
 
     buildTypes {
@@ -28,9 +28,9 @@ android {
     }
 
     testOptions {
-        unitTests {
-            includeAndroidResources = true
-        }
+        execution 'ANDROID_TEST_ORCHESTRATOR'
+        animationsDisabled true
+        unitTests.includeAndroidResources true
     }
 }
 
@@ -45,4 +45,5 @@ dependencies {
 
     androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
+    androidTestUtil 'com.android.support.test:orchestrator:1.1.0-alpha4'
 }
