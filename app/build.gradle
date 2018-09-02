@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 28
-    buildToolsVersion "28.0.1"
+    buildToolsVersion "28.0.2"
 
     defaultConfig {
         applicationId "net.rafaeltoledo.testing"
@@ -21,6 +21,9 @@ android {
     }
 
     buildTypes {
+        debug {
+            testCoverageEnabled true
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -28,22 +31,24 @@ android {
     }
 
     testOptions {
-        execution 'ANDROID_TEST_ORCHESTRATOR'
-        animationsDisabled true
+        // execution 'ANDROID_TEST_ORCHESTRATOR' // Not working
+        // animationsDisabled true
         unitTests.includeAndroidResources true
     }
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.0.0-rc01'
+    implementation 'androidx.appcompat:appcompat:1.0.0-rc02'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
     implementation 'com.google.android.material:material:1.0.0-rc01'
 
     testImplementation 'org.robolectric:robolectric:4.0-alpha-3'
     testImplementation 'androidx.test:runner:1.1.0-alpha4'
+    testImplementation 'androidx.test:rules:1.1.0-alpha4'
     testImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
 
     androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
+    androidTestImplementation 'androidx.test:rules:1.1.0-alpha4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
-    androidTestUtil 'com.android.support.test:orchestrator:1.1.0-alpha4'
+    // androidTestUtil 'com.android.support.test:orchestrator:1.1.0-alpha4'
 }
