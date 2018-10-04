@@ -2,15 +2,16 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 28
-    buildToolsVersion "28.0.1"
+    buildToolsVersion '28.0.3'
 
     defaultConfig {
-        applicationId "net.rafaeltoledo.testing"
+        applicationId 'net.rafaeltoledo.testing'
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        versionName '1.0'
+
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
 
     sourceSets {
@@ -35,15 +36,25 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha1'
-    implementation 'com.google.android.material:material:1.0.0-beta01'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
+    implementation 'com.google.android.material:material:1.0.0'
 
     testImplementation 'org.robolectric:robolectric:4.0-alpha-3'
-    testImplementation 'androidx.test:runner:1.1.0-alpha4'
-    testImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'androidx.test:core:1.0.0-beta01'
+    testImplementation 'androidx.test:runner:1.1.0-beta01'
+    testImplementation 'androidx.test.espresso:espresso-core:3.1.0-beta01'
+    testImplementation('androidx.test.ext:junit:1.0.0-beta01') {
+        exclude group: 'org.junit'
+    }
 
-    androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
-    androidTestUtil 'com.android.support.test:orchestrator:1.1.0-alpha4'
+    androidTestImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:core:1.0.0-beta01'
+    androidTestImplementation 'androidx.test:runner:1.1.0-beta01'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-beta01'
+    androidTestImplementation('androidx.test.ext:junit:1.0.0-beta01') {
+        exclude group: 'org.junit'
+    }
+    androidTestUtil 'androidx.test:orchestrator:1.1.0-beta01'
 }
