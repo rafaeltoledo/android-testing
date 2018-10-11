@@ -43,21 +43,19 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
     implementation 'com.google.android.material:material:1.0.0'
 
-    testImplementation 'org.robolectric:robolectric:4.0-alpha-3'
+    testImplementation 'org.robolectric:robolectric:4.0-beta-1'
     testImplementation 'junit:junit:4.12'
-    testImplementation 'androidx.test:core:1.0.0-beta01'
-    testImplementation 'androidx.test:runner:1.1.0-beta01'
-    testImplementation 'androidx.test.espresso:espresso-core:3.1.0-beta01'
-    testImplementation('androidx.test.ext:junit:1.0.0-beta01') {
-        exclude group: 'org.junit'
-    }
+    testImplementation 'androidx.test:core:1.0.0-beta02'
+    testImplementation 'androidx.test:runner:1.1.0-beta02'
+    testImplementation 'androidx.test:rules:1.1.0-beta02'
+    testImplementation 'androidx.test.espresso:espresso-core:3.1.0-beta02'
+    testImplementation 'androidx.test.ext:junit:1.0.0-beta02'
 
     androidTestImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:core:1.0.0-beta01'
-    androidTestImplementation 'androidx.test:runner:1.1.0-beta01'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-beta01'
-    androidTestImplementation('androidx.test.ext:junit:1.0.0-beta01') {
-        exclude group: 'org.junit'
-    }
-    androidTestUtil 'androidx.test:orchestrator:1.1.0-beta01'
+    androidTestImplementation 'androidx.test:core:1.0.0-beta02'
+    androidTestImplementation 'androidx.test:runner:1.1.0-beta02'
+    androidTestImplementation 'androidx.test:rules:1.1.0-beta02'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-beta02'
+    androidTestImplementation 'androidx.test.ext:junit:1.0.0-beta02'
+    androidTestUtil 'androidx.test:orchestrator:1.1.0-beta02'
 }
