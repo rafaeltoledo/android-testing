@@ -1,14 +1,11 @@
 package testing;
 
+import androidx.test.core.app.ActivityScenario;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 import net.rafaeltoledo.testing.MainActivity;
 import net.rafaeltoledo.testing.R;
-
-import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-
-import androidx.test.ext.junit.runners.AndroidJUnit4;
-import androidx.test.rule.ActivityTestRule;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -18,13 +15,16 @@ import static org.junit.Assert.assertNotNull;
 @RunWith(AndroidJUnit4.class)
 public class AnotherTest {
 
-    @Rule
-    public ActivityTestRule<MainActivity> activityRule = new ActivityTestRule<>(MainActivity.class);
-
     @Test
     public void sampleTest() {
-        assertNotNull(activityRule.getActivity());
-
+        ActivityScenario<MainActivity> scenario = ActivityScenario.launch(MainActivity.class);
         onView(withId(R.id.action_settings)).perform(click());
+
+        scenario.onActivity(new ActivityScenario.ActivityAction<MainActivity>() {
+            @Override
+            public void perform(MainActivity activity) {
+                assertNotNull(activity);
+            }
+        });
     }
 }
