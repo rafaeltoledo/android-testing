@@ -31,7 +31,7 @@ android {
     }
 
     testOptions {
-        execution = "ANDROID_TEST_ORCHESTRATOR"
+        execution = "ANDROIDX_TEST_ORCHESTRATOR"
         animationsDisabled = true
         unitTests.isIncludeAndroidResources = true
     }
@@ -54,7 +54,7 @@ dependencies {
     bothTestImplementation("androidx.test.espresso:espresso-core:3.1.0")
     bothTestImplementation("androidx.test.ext:junit:1.0.0")
 
-    testImplementation("org.robolectric:robolectric:4.0.1")
+    testImplementation("org.robolectric:robolectric:4.0.2")
 
     androidTestUtil("androidx.test:orchestrator:1.1.0")
 }
