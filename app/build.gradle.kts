@@ -43,7 +43,7 @@ fun bothTestImplementation(dependency: String) {
 }
 
 dependencies {
-    implementation("androidx.appcompat:appcompat:1.0.2")
+    implementation("androidx.appcompat:appcompat:1.1.0-alpha01")
 
     implementation("androidx.constraintlayout:constraintlayout:2.0.0-alpha2")
     implementation("com.google.android.material:material:1.1.0-alpha01")
@@ -54,7 +54,7 @@ dependencies {
     bothTestImplementation("androidx.test.espresso:espresso-core:3.1.1-alpha01")
     bothTestImplementation("androidx.test.ext:junit-ktx:1.1.0-alpha01")
 
-    testImplementation("org.robolectric:robolectric:4.0.2")
+    testImplementation("org.robolectric:robolectric:4.1-alpha-1")
 
     androidTestUtil("androidx.test:orchestrator:1.1.1-alpha01")
 }
