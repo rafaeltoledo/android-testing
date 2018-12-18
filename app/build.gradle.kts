@@ -46,15 +46,15 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.1.0-alpha01")
 
     implementation("androidx.constraintlayout:constraintlayout:2.0.0-alpha2")
-    implementation("com.google.android.material:material:1.1.0-alpha01")
+    implementation("com.google.android.material:material:1.1.0-alpha02")
 
-    bothTestImplementation("androidx.test:core-ktx:1.1.0-beta01")
-    bothTestImplementation("androidx.test:runner:1.1.1-beta01")
-    bothTestImplementation("androidx.test:rules:1.1.1-beta01")
-    bothTestImplementation("androidx.test.espresso:espresso-core:3.1.1-beta01")
-    bothTestImplementation("androidx.test.ext:junit-ktx:1.1.0-beta01")
+    bothTestImplementation("androidx.test:core-ktx:1.1.0")
+    bothTestImplementation("androidx.test:runner:1.1.1")
+    bothTestImplementation("androidx.test:rules:1.1.1")
+    bothTestImplementation("androidx.test.espresso:espresso-core:3.1.1")
+    bothTestImplementation("androidx.test.ext:junit-ktx:1.1.0")
 
     testImplementation("org.robolectric:robolectric:4.1")
 
-    androidTestUtil("androidx.test:orchestrator:1.1.1-beta01")
+    androidTestUtil("androidx.test:orchestrator:1.1.1")
 }
