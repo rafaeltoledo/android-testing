@@ -45,7 +45,7 @@ fun bothTestImplementation(dependency: String) {
 dependencies {
     implementation("androidx.appcompat:appcompat:1.1.0-alpha01")
 
-    implementation("androidx.constraintlayout:constraintlayout:2.0.0-alpha2")
+    implementation("androidx.constraintlayout:constraintlayout:2.0.0-alpha3")
     implementation("com.google.android.material:material:1.1.0-alpha02")
 
     bothTestImplementation("androidx.test:core-ktx:1.1.0")
