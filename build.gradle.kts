@@ -4,7 +4,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:3.4.0-beta01")
+        classpath("com.android.tools.build:gradle:3.4.0-beta02")
     }
 }
 
@@ -17,7 +17,7 @@ allprojects {
     configurations.all {
         resolutionStrategy.eachDependency {
             if (requested.group == "org.jacoco") {
-                useVersion("0.8.2")
+                useVersion("0.8.3")
             }
         }
     }
