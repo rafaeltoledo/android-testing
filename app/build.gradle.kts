@@ -48,9 +48,9 @@ fun bothTestImplementation(dependency: String) {
 }
 
 dependencies {
-    implementation("androidx.appcompat:appcompat:1.1.0-alpha01")
+    implementation("androidx.appcompat:appcompat:1.1.0-alpha02")
     implementation("androidx.activity:activity:1.0.0-alpha04")
-    implementation("androidx.fragment:fragment:1.1.0-alpha03")
+    implementation("androidx.fragment:fragment:1.1.0-alpha04")
 
     implementation("androidx.constraintlayout:constraintlayout:2.0.0-alpha3")
     implementation("com.google.android.material:material:1.1.0-alpha03")
@@ -60,9 +60,9 @@ dependencies {
     bothTestImplementation("androidx.test:rules:1.1.2-alpha01")
     bothTestImplementation("androidx.test.espresso:espresso-core:3.1.2-alpha01")
     bothTestImplementation("androidx.test.ext:junit-ktx:1.1.1-alpha01")
-    bothTestImplementation("androidx.fragment:fragment-testing:1.1.0-alpha03")
+    bothTestImplementation("androidx.fragment:fragment-testing:1.1.0-alpha04")
 
-    testImplementation("org.robolectric:robolectric:4.2-alpha-2")
+    testImplementation("org.robolectric:robolectric:4.2-beta-1")
 
     androidTestUtil("androidx.test:orchestrator:1.1.2-alpha01")
 }
