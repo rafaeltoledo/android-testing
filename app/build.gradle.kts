@@ -48,9 +48,9 @@ fun bothTestImplementation(dependency: String) {
 }
 
 dependencies {
-    implementation("androidx.appcompat:appcompat:1.1.0-alpha02")
-    implementation("androidx.activity:activity:1.0.0-alpha04")
-    implementation("androidx.fragment:fragment:1.1.0-alpha04")
+    implementation("androidx.appcompat:appcompat:1.1.0-alpha03")
+    implementation("androidx.activity:activity:1.0.0-alpha05")
+    implementation("androidx.fragment:fragment:1.1.0-alpha05")
 
     implementation("androidx.constraintlayout:constraintlayout:2.0.0-alpha3")
     implementation("com.google.android.material:material:1.1.0-alpha04")
