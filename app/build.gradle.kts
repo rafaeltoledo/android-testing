@@ -48,21 +48,21 @@ fun bothTestImplementation(dependency: String) {
 }
 
 dependencies {
-    implementation("androidx.appcompat:appcompat:1.1.0-alpha03")
-    implementation("androidx.activity:activity:1.0.0-alpha05")
-    implementation("androidx.fragment:fragment:1.1.0-alpha05")
+    implementation("androidx.appcompat:appcompat:1.1.0-alpha04")
+    implementation("androidx.activity:activity:1.0.0-alpha06")
+    implementation("androidx.fragment:fragment:1.1.0-alpha06")
 
-    implementation("androidx.constraintlayout:constraintlayout:2.0.0-alpha3")
-    implementation("com.google.android.material:material:1.1.0-alpha04")
+    implementation("androidx.constraintlayout:constraintlayout:2.0.0-alpha4")
+    implementation("com.google.android.material:material:1.1.0-alpha05")
 
-    bothTestImplementation("androidx.test:core-ktx:1.1.1-alpha02")
-    bothTestImplementation("androidx.test:runner:1.1.2-alpha02")
-    bothTestImplementation("androidx.test:rules:1.1.2-alpha02")
-    bothTestImplementation("androidx.test.espresso:espresso-core:3.2.0-alpha02")
-    bothTestImplementation("androidx.test.ext:junit-ktx:1.1.1-alpha02")
-    bothTestImplementation("androidx.fragment:fragment-testing:1.1.0-alpha04")
+    bothTestImplementation("androidx.test:core-ktx:1.2.0-alpha03")
+    bothTestImplementation("androidx.test:runner:1.2.0-alpha03")
+    bothTestImplementation("androidx.test:rules:1.2.0-alpha03")
+    bothTestImplementation("androidx.test.espresso:espresso-core:3.2.0-alpha03")
+    bothTestImplementation("androidx.test.ext:junit-ktx:1.1.1-alpha03")
+    bothTestImplementation("androidx.fragment:fragment-testing:1.1.0-alpha06")
 
-    testImplementation("org.robolectric:robolectric:4.2")
+    testImplementation("org.robolectric:robolectric:4.3-alpha-2")
 
-    androidTestUtil("androidx.test:orchestrator:1.1.2-alpha02")
+    androidTestUtil("androidx.test:orchestrator:1.2.0-alpha03")
 }
